@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+
+    Name:<input type="text" id="UserNameLogin" /><br/>
+    Password:<input type="text" id="UserPasswordLogin" /><br/>
+    <button onclick="loginBtn()" >Login</button>
+
+
+
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Course Name</th>
+                <th>Time</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="coursesTable">
+
+        </tbody>
+    </table>
+    <div>
+        <h1>Add New Course</h1>
+        Name:<input type="text" id="CourseName" /><br/>
+        Time:<input type="text" id="CourseTime" /><br/>
+        <button onclick="addNewCourseBtn()" >Add New Course</button>
+    </div>
+    <div>
+        <h1>Edit Course</h1>
+        <input type="hidden" id="CourseIdEdit" />
+        Name:<input type="text" id="CourseNameEdit" /><br/>
+        Time:<input type="text" id="CourseTimeEdit" /><br/>
+        <button onclick="saveCourseBtn()" >Save</button>
+    </div>
+
+
+
+
+    <h1>Users</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Age</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="usersTable">
+
+        </tbody>
+    </table>
+    <div>
+        <h1>Add New User</h1>
+        Name:<input type="text" id="UserName" /><br/>
+        Age:<input type="text" id="UserAge" /><br/>
+        Password:<input type="text" id="UserPassword" /><br/>
+        <button onclick="addNewUserBtn()" >Add New User</button>
+    </div>
+    <div>
+        <h1>Edit User</h1>
+        <input type="hidden" id="UserIdEdit" />
+        Name:<input type="text" id="UserNameEdit" /><br/>
+        Age:<input type="text" id="UserAgeEdit" /><br/>
+        Password:<input type="text" id="UserPasswordEdit" /><br/>
+        <button onclick="saveUserBtn()" >Save</button>
+    </div>
+    <script src="service.js" ></script>
+    <script src="app.js" ></script>
+</body>
+</html>
